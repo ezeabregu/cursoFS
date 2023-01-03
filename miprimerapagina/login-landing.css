@@ -1,6 +1,6 @@
-@import url(./fuentes/EastSeaDokdo-Regular.ttf);
-*{
-    font-family: 'East Sea Dokdo', cursive;
+@font-face {
+    font-family: 'EastSeaDokdo';
+    src: url(./fuentes/EastSeaDokdo-Regular.ttf);
 }
 
 .contenedor{
@@ -17,29 +17,48 @@
     height: 100px;
 }
 
+#textos{
+    font-family: 'EastSeaDokdo';
+    font-size: 30px;
+}
+
 #email{
-    border-radius: 4px;    
+    border-radius: 4px; 
+    font-family: 'EastSeaDokdo';
+    font-size: 17px;
+    margin-bottom: 0px;
 }
 
 #password{
+    margin-top: 0px;
     border-radius: 4px;
+    font-family: 'EastSeaDokdo';
+    font-size: 17px;
 }
 
 .btnEntrar{
+    margin-top: 10px;
     padding: 0.4em 2.6em;
     padding-top: 0.4em;
     background-color: #0f0179;
     border: none;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 29px;
     line-height: 24px;
     color: #fff;
     cursor: pointer;
     appearance: none;
+    font-family: 'EastSeaDokdo';
 }
 
 .btnReset{
+    margin-top: 10px;
    appearance: none;
    cursor: pointer;
    background-color: white;
+   font-family: 'EastSeaDokdo';
+   font-size: 15px;
+   border: initial  black;
+   border-radius: 20px;
+   line-height: 24px;
 }
