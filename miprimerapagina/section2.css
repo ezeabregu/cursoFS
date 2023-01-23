@@ -1,0 +1,55 @@
+body{
+    background-color:#eceff4;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+
+.contenedor{
+    background-color: white;
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-imagenes{
+    width: 80%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagen{
+   width: 130px;
+   transition: 1s;
+}
+
+.imagen:hover{
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(0.5);
+}
+
+.boton{
+   display: none;
+}
+
+.titular{
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.parrafo{
+    text-align:justify;
+    font-size: 1rem;
+}
