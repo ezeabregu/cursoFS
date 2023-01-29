@@ -26,18 +26,15 @@ body{
     margin-top: 10%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; 
+    /* display: grid;
+    gap: 5px;
+    grid-template-rows: repeat(auto-fit,minmax(150px,1fr)); */
 }
 
 .imagen{
    width: 130px;
-   transition: 1s;
 }
-
-.imagen:hover{
-  opacity: 0.8;
-  transform: scale(0.5);
-} 
 
 .titular{
     justify-content: center;
@@ -52,6 +49,7 @@ body{
 .card {
     width: 150px;
     height: 150px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,17 +64,20 @@ body{
 .boton{
     color: white;
     border: 1rem;
-    background-color: 003366;
+    background-color: #003e5c;
     padding: 0.5rem;
     text-decoration: none;
+    text-transform: uppercase;
     border-radius: 15px;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     opacity: 0;
     position: absolute;
+    transition: 1s;
  }
 
 .boton:hover {
     opacity: 1;
+    transform: scale(1);
 }
 
 .contenedor1{
