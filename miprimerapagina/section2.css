@@ -35,14 +35,9 @@ body{
 }
 
 .imagen:hover{
-  cursor: pointer;
   opacity: 0.8;
   transform: scale(0.5);
-}
-
-.boton{
-   display: none;
-}
+} 
 
 .titular{
     justify-content: center;
@@ -53,3 +48,33 @@ body{
     text-align:justify;
     font-size: 1rem;
 }
+
+.card {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.boton{
+    color: white;
+    border: 1rem;
+    background-color: 003366;
+    padding: 0.5rem;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    opacity: 0;
+    position: absolute;
+ }
+
+.boton:hover {
+    opacity: 1;
+}  
