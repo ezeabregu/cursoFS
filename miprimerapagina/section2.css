@@ -77,4 +77,77 @@ body{
 
 .boton:hover {
     opacity: 1;
-}  
+}
+
+.contenedor1{
+    background-color: white;
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.contactContainer1{
+    width: 50%;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+.contactContainer2{
+    width: 50%;
+    height: 100%;
+}
+
+.mapa{
+    width: 100%;
+    height: 100%;
+    margin-top: 4rem;
+}
+
+.listaContacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.7rem;
+    padding: 10px;
+    color: gray;
+}
+
+.ordenSucursales{
+    display: flex;
+    flex-direction: row ;
+    margin-bottom: 2rem ;
+}
+
+.separador{
+    margin: 1rem 0rem;
+}
+
+.iconosSocialMedia{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.piePagina{
+    background-color: white;
+    width: 80vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenPie{
+    width: 50px;
+    height: 50px;
+}
+
+.linea {
+    border-top: 1px solid black;
+    height: 2px;
+    padding: 0;
+  }
