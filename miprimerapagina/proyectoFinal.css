@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+header{
+    position: fixed;
+}
+
 .navbar__class{
     width: 100%;
     height: 50px;
@@ -39,4 +43,46 @@
 .navbar__lista ul li a{
     text-decoration: none;
     color: white;
+}
+/*********************************************************/
+.seccion__hero{
+    height: calc(100vh - 50px);
+    background-image: url('./images/hero_fondo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.seccion__hero h1 span{
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.seccion__hero h1{
+    text-transform: uppercase;
+    color:#0747a6;
+    margin-left: 1.5rem;
+}
+
+/*********************************************************/
+.seccion__imagenes{
+    height: 100vh;
+    background-color: white;
+}
+
+/*********************************************************/
+.seccion__contacto{
+    height: 100vh;
+    background-color: red;
+}
+
+/*********************************************************/
+.seccion__footer{
+    width: 100%;
+    height: 2.5rem;
+    background-color: gray;
 }
