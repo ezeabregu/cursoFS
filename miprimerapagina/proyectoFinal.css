@@ -14,6 +14,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 .navbar__imagendiv{
@@ -46,7 +47,7 @@ header{
 }
 /*********************************************************/
 .seccion__hero{
-    height: calc(100vh - 50px);
+    height: 100vh;
     background-image: url('./images/hero_fondo.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -69,20 +70,88 @@ header{
 }
 
 /*********************************************************/
+
 .seccion__imagenes{
+    width: 100%;
     height: 100vh;
     background-color: white;
+}
+
+.seccion__imagenes .imagenes__grid{
+    height: calc(100vh - 80px);
+    margin-left: 30px;
+    display: grid;
+    gap: 5px;
+    grid-template-rows: minmax(auto, auto);
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.seccion__imagenes .imagenes__grid img{
+    background-color: blue;
+    height: 200px;
+    width: 400px;
+}
+
+.seccion__imagenes .vista360{
+    height: 30px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion__imagenes .vista360 button{
+    border: 2px solid #0747a6;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.seccion__imagenes .vista360 button:hover{
+    background-color:#0747a6;
+    border-radius: 20px;
+}
+
+.seccion__imagenes .vista360 a{
+    text-decoration: none;
+    color: #0747a6;
+    margin: 0px 20px;
+    text-transform: uppercase;
+}
+
+.seccion__imagenes .vista360 a:hover{
+    text-decoration: none;
+    color: white;
+    margin: 0px 20px;
+    text-transform: uppercase;
+}
+
+.seccion__imagenes .titulo__imagenes {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion__imagenes .titulo__imagenes h2{
+    text-transform: uppercase;
+    color: #0747a6;
 }
 
 /*********************************************************/
 .seccion__contacto{
     height: 100vh;
-    background-color: red;
+    background-image: url('./images/fondoContacto.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.2;
 }
 
 /*********************************************************/
-.seccion__footer{
+.footer{
     width: 100%;
-    height: 2.5rem;
+    height: 3rem;
     background-color: gray;
 }
