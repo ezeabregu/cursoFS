@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --font-family: 'Roboto', sans-serif;
+    --font-family2: 'Roboto Mono', monospace;
+}
+
 *{
     margin: 0 0;
     padding: 0;
@@ -6,6 +13,8 @@
 header{
     position: fixed;
 }
+
+/*********************************************************/
 
 .navbar__class{
     width: 100%;
@@ -29,22 +38,38 @@ header{
 }
 
 .navbar__lista{
+    height: 70%;
 }
 
 .navbar__lista ul{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    list-style: none;
 }
 
 .navbar__lista ul li{
-    list-style: none;
+    display: flex;
+    align-items: center;
     margin: 0 5px;
+    height: 100%;
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+
+.navbar__lista ul li:hover{
+    border-bottom: 1px solid white;
 }
 
 .navbar__lista ul li a{
     text-decoration: none;
     color: white;
+    text-transform: uppercase;
+    font-family: var(--font-family,--font-family2);
 }
+
 /*********************************************************/
 .seccion__hero{
     height: 100vh;
@@ -60,13 +85,57 @@ header{
 
 .seccion__hero h1 span{
     text-transform: uppercase;
-    color: whitesmoke;
+    color: #0747a6;
+    font-size: 4rem;
+    font-family: var(--font-family,--font-family2);
 }
 
 .seccion__hero h1{
     text-transform: uppercase;
-    color:#0747a6;
+    color:#00205b;
     margin-left: 1.5rem;
+    font-size: 3rem;
+    font-family: var(--font-family,--font-family2);
+}
+
+/*********************************************************/
+
+.seccion__acerca{
+    width: 100%;
+    height: 100vh;
+    background-color: #0747a6;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion__acerca .seccion__titulo h2{
+    text-transform: uppercase;
+    color: white;
+    font-size: 6rem;
+    font-family: var(--font-family,--font-family2);
+}
+
+.seccion__info{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.seccion__info .seccion__col{
+    width: 100%;
+    height: 100%;
+    margin: 5px 20px;
+}
+
+.seccion__col p{
+    font-size: 1.3rem;
+    font-family: var(--font-family,--font-family2);
 }
 
 /*********************************************************/
@@ -75,22 +144,29 @@ header{
     width: 100%;
     height: 100vh;
     background-color: white;
-}
-
-.seccion__imagenes .imagenes__grid{
-    height: calc(100vh - 80px);
-    margin-left: 30px;
-    display: grid;
-    gap: 5px;
-    grid-template-rows: minmax(auto, auto);
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.seccion__imagenes .imagenes__grid img{
-    background-color: blue;
+.seccion__imagenes .imagenes__grid{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 20px;
+    align-items: center;    
+}
+
+.seccion__imagenes .imagenes__grid .zoom{
     height: 200px;
     width: 400px;
+    transition: all .3s ease-in-out;
+}
+
+.seccion__imagenes .imagenes__grid .zoom:hover{
+    transform: scale(1.05);
 }
 
 .seccion__imagenes .vista360{
@@ -114,14 +190,14 @@ header{
 .seccion__imagenes .vista360 a{
     text-decoration: none;
     color: #0747a6;
-    margin: 0px 20px;
+    margin: 0px 10px;
     text-transform: uppercase;
 }
 
 .seccion__imagenes .vista360 a:hover{
     text-decoration: none;
     color: white;
-    margin: 0px 20px;
+    margin: 0px 10px;
     text-transform: uppercase;
 }
 
@@ -136,22 +212,100 @@ header{
 .seccion__imagenes .titulo__imagenes h2{
     text-transform: uppercase;
     color: #0747a6;
+    font-family: var(--font-family,--font-family2);
 }
 
 /*********************************************************/
 .seccion__contacto{
-    height: 100vh;
+    padding: 100px 100px;
     background-image: url('./images/fondoContacto.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    opacity: 0.2;
+    position: relative;
+
+}
+
+.seccion__contacto::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.seccion__contacto *{
+    position: relative;
+    z-index: 1;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion__contacto .contacto__titulo h2{
+    text-transform: uppercase;
+    color:#0747a6;
+    font-size: 2rem;
+    font-family: var(--font-family,--font-family2);
+}
+
+.seccion__datos{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.seccion__datos .datos__col{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.datos__col p{
+    margin: 10px 0px;
+    color:#00205b;
+}
+
+.seccion__datos .mapa__col{
+    width: 100%;
+    height: 100%;
+    margin: 5px 20px;
+}
+
+.seccion__datos .mapa__col img{
+    width: 100%;
+    height: 100%;
+}
+
+.datos__col a{
+    text-decoration: none;
+    color:#00205b;
 }
 
 /*********************************************************/
 .footer{
     width: 100%;
     height: 3rem;
-    background-color: gray;
+    background-color: #0747a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer label{
+    color: white;
+    font-size: 1rem;
 }
