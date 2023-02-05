@@ -1,0 +1,119 @@
+*{
+    padding: 0 0;
+    margin: 0 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --font-family: 'Roboto', sans-serif;
+    --font-family2: 'Roboto Mono', monospace;
+}
+
+body{
+ font-family: var(--font-family);
+}
+
+/**************************************************************/
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.contenedor .contenedor__imagen {
+    background-image: url('./images/fondoInicia.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor__imagen img{
+    width: 100%;
+    height: 100%;
+}
+
+/**************************************************************/
+
+.contenedor__sesion .seccion__signin{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion__signin div{
+    margin: 10px 0px;
+}
+
+.seccion__signin h2{
+    text-transform: uppercase;
+    color: #0747a6;
+    font-size: 3rem;
+}
+
+.entradas input{
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #0747a6;
+    width: 15rem;
+}
+
+.boton__iniciar button{
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+    font-family: var(--font-family);
+    border: 1px solid #0747a6;
+    background-color: #0747a6;
+    width: 15rem;
+}
+
+.boton__iniciar button:hover{
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid #1f74f3;
+    background-color: #1f74f3;
+    width: 15rem;
+}
+
+.boton__iniciar a{
+    text-decoration: none;
+    color: white;
+}
+
+.boton__registrar button{
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+    font-family: var(--font-family);
+    border: 1px solid #0747a6;
+    background-color: #0747a6;
+    width: 15rem;
+}
+
+.boton__registrar button:hover{
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid #1f74f3;
+    background-color: #1f74f3;
+    width: 15rem;
+}
+
+.boton__registrar a{
+    text-decoration: none;
+    color: white;
+}
+
+/**************************************************************/

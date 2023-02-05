@@ -35,6 +35,11 @@ header{
 .navbar__imagendiv img{
     height: 100%;
     width: 100%;
+    transition: 1s;
+}
+
+.navbar__imagendiv img:hover{
+    transform: scale(1.1);
 }
 
 .navbar__lista{
@@ -73,7 +78,7 @@ header{
 /*********************************************************/
 .seccion__hero{
     height: 100vh;
-    background-image: url('./images/hero_fondo.jpg');
+    background-image: url('./images/hero_fondo1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,6 +99,7 @@ header{
     text-transform: uppercase;
     color:#00205b;
     margin-left: 1.5rem;
+    margin-bottom: 1.8rem;
     font-size: 3rem;
     font-family: var(--font-family,--font-family2);
 }
@@ -111,6 +117,10 @@ header{
     align-items: center;
 }
 
+.seccion__acerca .seccion__titulo{
+    margin-top: 50px;
+}
+
 .seccion__acerca .seccion__titulo h2{
     text-transform: uppercase;
     color: white;
@@ -121,6 +131,7 @@ header{
 .seccion__info{
     width: 80%;
     height: 70%;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,14 +145,15 @@ header{
 }
 
 .seccion__col p{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    text-align: justify;
+    color: white;
     font-family: var(--font-family,--font-family2);
 }
 
 /*********************************************************/
 
 .seccion__imagenes{
-    width: 100%;
     height: 100vh;
     background-color: white;
     display: flex;
@@ -150,13 +162,16 @@ header{
     align-items: center;
 }
 
-.seccion__imagenes .imagenes__grid{
+.seccion__imagenes .contenedor .imagenes__grid{
     padding: 20px;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px, auto);
-    gap: 20px;
-    align-items: center;    
+    gap: 20px; */
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: minmax(200px,auto);
 }
 
 .seccion__imagenes .imagenes__grid .zoom{
@@ -217,7 +232,7 @@ header{
 
 /*********************************************************/
 .seccion__contacto{
-    padding: 100px 100px;
+    padding: 50px 100px;
     background-image: url('./images/fondoContacto.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -244,10 +259,19 @@ header{
 }
 
 .contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.seccion__contacto .contacto__titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .seccion__contacto .contacto__titulo h2{
@@ -308,4 +332,20 @@ header{
 .footer label{
     color: white;
     font-size: 1rem;
+}
+
+/*********************************************************/
+/*************media-query*********************************/
+/*********************************************************/
+
+/* Smartphones*/
+@media (max-width : 100px) and (max-width : 375px) {
+
+}
+
+
+/* iPads 768px to 1024px */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) 
+and (orientation : portrait) {
+ 
 }
