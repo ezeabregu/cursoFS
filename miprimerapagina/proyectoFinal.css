@@ -118,7 +118,7 @@ header{
 }
 
 .seccion__acerca .seccion__titulo{
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 .seccion__acerca .seccion__titulo h2{
@@ -131,7 +131,7 @@ header{
 .seccion__info{
     width: 80%;
     height: 70%;
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
