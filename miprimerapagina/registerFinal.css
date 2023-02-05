@@ -95,8 +95,9 @@ body{
 
 /**************************************************************/
 
-@media (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .contenedor{
         grid-template-columns: 100%;
+        grid-template-rows: 20% 80%;
     }
 }
