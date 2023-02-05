@@ -405,6 +405,10 @@ header{
     }
 
   /*************************************/ 
+
+    .seccion__contacto{
+    background-size:auto;
+   }
     .seccion__contacto .contenedor{
         margin: 0px 0px;
     }
