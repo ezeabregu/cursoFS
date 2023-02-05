@@ -369,7 +369,7 @@ header{
     }
    /*************************************/
     .seccion__acerca{
-        height: 90vh;
+        height: auto;
     }
 
     .seccion__acerca .seccion__titulo{
@@ -398,11 +398,12 @@ header{
     }
 
     .seccion__imagenes .contenedor .imagenes__grid{
-        padding: 5px;
-        gap: 10px;
+        padding: 0px;
+        gap: 5px;
         grid-template-columns: 1fr  ;
         grid-template-rows: repeat(6,1fr);
     }
+
   /*************************************/ 
     .seccion__contacto .contenedor{
         margin: 0px 0px;
