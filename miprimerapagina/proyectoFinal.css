@@ -400,9 +400,8 @@ header{
     .seccion__imagenes .contenedor .imagenes__grid{
         padding: 0px;
         gap: 0px;
-        grid-template-columns: 1fr  ;
+        grid-template-columns: 100%;
         grid-template-rows: repeat(6,1fr);
-        background-color: red;
     }
 
     .seccion__imagenes .item__grid{
@@ -417,17 +416,18 @@ header{
 
   /*************************************/ 
 
-    .seccion__contacto{
+   .seccion__contacto{
     background-size:auto;
    }
-    .seccion__contacto .contenedor{
-        margin: 0px 0px;
-    }
 
-    .seccion__datos{ 
+   .seccion__contacto .contenedor{
+        margin: 0px 0px;
+   }
+
+   .seccion__datos{ 
         width: 100%; 
         flex-direction: column;
-        }
+   }
 }
 
 
