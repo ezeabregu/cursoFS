@@ -1,3 +1,17 @@
 h1, footer{
     text-align: center;
+    color: #154360;
+}
+
+h6{
+    font-size: 1rem;
+}
+
+hr{
+    color: #154360;
+}
+
+.subtitulo{
+    text-decoration: underline;
+    color: #21618C;
 }
