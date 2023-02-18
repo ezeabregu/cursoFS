@@ -88,23 +88,21 @@ header{
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
 }
 
 .seccion__hero h1 span{
     text-transform: uppercase;
     color: #0747a6;
-    font-size: 4rem;
+    font-size: 6rem;
     font-family: var(--font-family,--font-family2);
 }
 
 .seccion__hero h1{
     text-transform: uppercase;
     color:#00205b;
-    margin-left: 1.5rem;
-    margin-bottom: 1.8rem;
-    font-size: 3rem;
+    font-size: 5rem;
     font-family: var(--font-family,--font-family2);
 }
 
@@ -343,13 +341,84 @@ header{
     .navbar__lista ul{
         display: none;
     }
-    .navbar__lista__burger{
+     .navbar__lista__burger{
         display: contents;
-    }
-    .navbar__lista__burger i{
+    } 
+
+    .navbar__lista__burger nav ul li a{
+        display: block;
         color: white;
-        margin-right: 20px;
+        text-decoration: none;
+        padding: 0px 20px;
+        border-bottom: 2px solid  #0747a6;
+        max-width: 600px;
+        background: #0747a6;
+        font-variant: small-caps;
+        font-size: 1.3rem;
+        text-shadow: 1px 1px black;
     }
+
+    .navbar__lista__burger nav{
+        margin-top: 180px;
+    }
+
+    .navbar__lista__burger nav ul{
+        background: #0747a6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        list-style: none;
+    }
+
+    .navbar__lista__burger nav ul li{
+        list-style-type: none;
+    }
+
+    .navbar__lista__burger input[type="checkbox"], .navbar__lista__burger .fa-times, .navbar__lista__burger .fa-bars{
+        position: absolute;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        right: 0;
+        top: 10px;
+        width: 50px;
+        height: 50px;   
+    }
+
+    .navbar__lista__burger .fa-bars, .navbar__lista__burger .fa-times {
+        font-size: 30px;
+        pointer-events: none;
+    }
+      
+    .navbar__lista__burger input[type="checkbox"] {
+        opacity: 0;
+    }
+      
+    .navbar__lista__burger {
+        color: white;
+        position: relative;
+        background: #0747a6;
+        min-height: 48px;
+    }
+      
+      .navbar__lista__burger nav {
+        display: none;
+      }
+      
+      .navbar__lista__burger input:checked ~ nav {
+        display: block;
+      }
+      
+      .navbar__lista__burger input:checked ~ .fa-bars {
+        display: none;
+      }
+      
+      .navbar__lista__burger input:not(:checked) ~ .fa-times {
+        display: none;
+      } 
+
   /*************************************/
     .seccion__hero{
         width: 100%;
