@@ -5,6 +5,10 @@
     --font-family2: 'Roboto Mono', monospace;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0 0;
     padding: 0;
