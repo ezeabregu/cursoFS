@@ -7,6 +7,7 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 *{
@@ -151,7 +152,7 @@ header{
 }
 
 .seccion__col p{
-    font-size: 1.2rem;
+    font-size: calc(1em + 1vw);
     text-align: justify;
     color: white;
     font-family: var(--font-family,--font-family2);
@@ -509,7 +510,7 @@ header{
 }
 
 
-/* iPads 768px to 1023px */
+/* iPads 600px to 1024px */
 @media only screen and (min-device-width : 601px) and (max-device-width : 1024px){
     .navbar__lista ul{
         display: flex;
@@ -576,7 +577,7 @@ header{
 
     .seccion__imagenes .contenedor .imagenes__grid{
         margin-bottom: 10px;
-        gap: 30px;
+        gap: 8px;
         grid-template-columns: 50% 50%;
         grid-template-rows: repeat(3,1fr);
     }
