@@ -99,3 +99,30 @@
 
 /**************CICLOS***************************************/
 
+//-Crear un array con los números del 1 al 10.
+//let numeros = [1,2,3,4,5,6,7,8,9,10];
+//-Crear un bucle for que imprima en consola todos los números 
+//del array.
+// for (let i = 0; i < numeros.length; i++) {
+//     console.log(numeros[i]);
+// }
+//-Crear un bucle que imprima solo los primeros 5 números.
+// for (let i = 0; i < numeros.length/2; i++) {
+//     console.log(numeros[i]);
+// }
+//-Crear un bucle que imprima los últimos 5 números.
+//  for (let i = 5; i < numeros.length; i++) {
+//      console.log(numeros[i]);
+//  }
+//-Crear un bucle que imprima todos los números, excepto
+// el que este en la 4ta posición.
+// for (let i = 0; i < numeros.length; i++) {
+//     if(i==3){
+//          continue;
+//     }
+//     console.log(numeros[i]);
+// }
+
+/**************FUNCIONES************************************/
+
+
