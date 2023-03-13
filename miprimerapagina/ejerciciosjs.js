@@ -123,6 +123,115 @@
 //     console.log(numeros[i]);
 // }
 
-/**************FUNCIONES************************************/
+/**************FUNCIONES y ARRAYS*******************************/
 
+//  let helados = ['Chocolate Alpino','Frutilla a la crema',
+//  'Limon y Jengibre','Vainilla','Mantecol'];
 
+/*Colocar el elemento al final del array al comienzo*/
+// const moverHelado = () => {
+//     for (let index = 0; index < helados.length; index++) {
+//         if(index==(helados.length-1))
+//         {   
+//             helados.slice(0,index);
+//         }
+//     }
+// }
+
+// moverHelado();
+// console.log(helados);
+
+/*Agregar un sabor al final del array*/
+// const agregarSabor = () => {
+//     let sabor = prompt('Ingrese nuevo sabor: ')
+//     helados.push(sabor);
+// }
+
+// agregarSabor();
+// console.log(helados);
+
+/*Imprimir array en consola*/
+//console.log(helados);
+
+/*Eliminar el primer elemento y colocarlo al final*/
+// const modificarHelados = () => {
+//     helados.push(helados.shift());
+//     console.log(helados);
+// }
+
+// modificarHelados();
+
+/*Eliminar el primer elemento y colocarlo al final*/
+// const invertirHelados = () => {
+//  console.log(helados.reverse().join("-"));
+// }
+// console.log(helados);
+// invertirHelados();
+
+/*Crea otro array de gustos de helado con al menos 
+3 gustos de helado. Luego, crea una función que
+ una ambos arrays y retorne un único array que 
+ solo deje los dos últimos elementos del primer 
+ array y los primeros del segundo. Finalmente, 
+ imprimí ese nuevo array por pantalla. */
+
+//  let helados2 = ['Durazno','Frutos del Bosque',
+//  'Crema del Cielo'];
+
+//  const unirGustos = () => {
+//   let gustos = helados.slice(helados.length - 2)
+//   .concat(helados2.slice(0, 2));
+//   return gustos;
+// };
+
+// console.log(unirGustos());
+
+/*Escribí un código en el cual crees un array con 
+gustos de helados y una función que reciba un array 
+de gustos de helados como parámetro que imprima en 
+consola un array con los mismos gustos pero que solo 
+estén las primeras 3 letras de cada gusto, pasadas 
+todas a mayúscula.*/
+
+// const nombresCortos = (gustos) => {
+//   let nuevaLista = [];
+//   for (let i = 0; i < gustos.length; i++) {
+//     nuevaLista.push(gustos[i].slice(0, 3).toUpperCase());
+//   }
+//   console.log(nuevaLista);
+// };
+
+// nombresCortos(helados);
+
+/*Llegamos al último ejercicio, el cual es bastante particular.
+Un integrante del equipo de Nucba es fanático de Cristiano 
+Ronaldo y de escribir las palabras al revés. Como si esto
+fuera poco, suele poner muchos espacios al principio y al
+final de cada frase. El otro día escribió la frase que van 
+a ver en este enunciado.
+
+Para arreglar esto, les pedimos que escriban una función que:
+
+- Elimine los espacios al principio y al final de la frase.
+- invierta todas las palabras para que el texto pueda leerse 
+correctamente.
+- Reemplace la palabra “Ronaldo” por la palabra “Messi” y 
+viceversa.*/
+
+// let texto =
+//   "         .levin us ed sojel yum atse isseM y odnum led rodaguj rojem le se odlanoR          ";
+
+// const arreglarTexto = () => {
+//   texto = texto
+//     .trim()
+//     .split("")
+//     .reverse("")
+//     .join("")
+//     .replace("Messi", "Ronaldo")
+//     .replace("Ronaldo", "Messi");
+//   console.log(texto);
+// };
+
+// arreglarTexto();
+
+/**************FUNCIONES y ARRAYS*******************************/
