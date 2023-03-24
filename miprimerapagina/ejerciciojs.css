@@ -1,7 +1,8 @@
 body{
-    background-image: url('./images/fondoJS.png');
-    background-position: center;
-    background-size: cover;
+    /* background-image: url('./images/fondoJS.png'); */
+    /* background-position: center;
+    background-size: cover; */
+    background-color: #ffc845;
 }
 
 a{
@@ -11,11 +12,25 @@ a{
     font-size: 1em;
 }
 
+.botonAtras{
+    color: white;
+    background-color: black;
+    border: 0px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: solid  ;
+}
+
 .titulo {
     width: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
+}
+
+.tituloEjercicios {
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .titulo h1{
@@ -34,5 +49,10 @@ a{
     flex-direction: row;
     align-items: center;
     gap: 20px;
+}
+
+.seccionEjercicio {
+    display: flex;
+    flex-direction: column;
 }
 

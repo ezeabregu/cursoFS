@@ -667,7 +667,117 @@ minutos”*/
 // );
 
 /***************************************************************/
+// Ejercicio E1
 
+// Crear el array de objetos "Pizzas".
+// Debemos crear 6 objetos como mínimo.
+// Cada objeto debe tener definido su id (1,2,3,etc), nombre,
+// ingredientes (Sobre la base) y precio. (Ingredientes debe ser 
+// una lista). 
 
+// Crear una iteración del array que imprima en consola:
+// a) Las pizzas que tengan un id impar.
+// b) ¿Hay alguna pizza que valga menos de $600?
+// c) Los nombres de todos las pizzas.
+// d) Los precios de las pizzas.
+// e) El nombre de cada pizza con su respectivo precio.
+
+// Cada respuesta debe ser, como siempre, usuario friendly. 
+// Si (como en el punto B), la respuesta es un booleano, no 
+// imprimir el booleano. 
+// Manejemos esa respuesta, pensando en que un usuario 
+// va a leer eso. 
+
+// Por ejemplo: "La pizza X, tiene un valor de $XXXX”.
+
+class pizza{
+  constructor(id,nombre,ingredientes,precio)
+  {
+    this.id=id;
+    this.nombre=nombre;
+    this.ingredientes=ingredientes;
+    this.precio=precio;
+  }
+}
+
+const pepperoni=new pizza(1,'Pepperoni',['Muzzarela','Tomate','Orégano','Pepperoni','Bacon','Olivas Negras'],550);
+const carbonara=new pizza(2,'Carbonara',['Muzzarela','Orégano','Bacon','Cebolla','Champinones','Salsa Carbonara'],580);
+const vegetal=new pizza(3,'Vegetal',['Muzzarela','Tomate','Orégano','Calabacin','Berenjena','Cebolla','Pimiento','Champinones'],310);
+const york=new pizza(4,'York',['Muzzarela','Tomate','Orégano','Jamón York','Champinones','Olivas'],285);
+const hawaiana=new pizza(5,'Hawaiana',['Muzzarela','Tomate','Orégano','Jamón York','Piña'],950);
+const yorkYbacon=new pizza(6,'York & Bacon',['Muzzarela','Tomate','Orégano','Bacon','Jamón York','Champinones','Cebolla','Olivas Negras'],230);
+const bacon=new pizza(7,'Bacon',['Muzzarela','Tomate','Orégano','Bacon','Champinones','Cebolla'],930);
+const barbacoa=new pizza(8,'Barbacoa',['Muzzarela','Tomate','Orégano','Bacon','Ternera','Salsa Barbacoa'],1370);
+const atun=new pizza(9,'Atún',['Muzzarela','Tomate','Orégano','Atún','Pimiento Rojo','Cebolla','Olivas Negras'],2350);
+const quesoCabra=new pizza(10,'Queso Cabra',['Muzzarela','Tomate','Orégano','Edam','Gouda','Azul','Cabra','Cheddar'],680);
+const pollo=new pizza(11,'Pollo',['Muzzarela','Tomate','Orégano','Pollo','Pimiento','Olivas','Cebolla'],1400);
+const mejicana=new pizza(12,'Mejicana',['Muzzarela','Tomate','Orégano','Salsa Picante','Guindilla','Champinones','Ternera'],1600);
+
+const arrayPizza=[];
+
+arrayPizza.push(pepperoni,carbonara,vegetal,york,hawaiana,yorkYbacon,bacon,barbacoa,atun,quesoCabra,pollo,mejicana);
+
+//console.log(arrayPizza);
+
+//Punto A
+
+//  const pizzaImpares = () => {
+//    arrayPizza.forEach(
+//       (pizza) => {
+//         if((pizza.id %2) !== 0)
+//         console.log(`ID:${pizza.id}, ${pizza.nombre}, sus ingredientes son: ${pizza.ingredientes}. Valor $${pizza.precio}`)
+//       }
+//     );
+//   }
+
+//   console.log("A)Las Pizzas con ID impar son: ")
+//   pizzaImpares();
+
+//Punto B
+
+// const pizzaMenos600 = () => {
+//   arrayPizza.forEach((pizza) => {
+//     if(pizza.precio <= 600)
+//       console.log(`La pizza ${pizza.nombre} que tiene un valor de $${pizza.precio}`)
+//   })
+// }
+
+// console.log("B)Las pizzas menores a $600 son: ")
+// pizzaMenos600();
+
+//Punto C
+
+// const nombresPizzas = () => {
+//   arrayPizza.forEach((pizza) => {
+//     console.log(`Pizza ${pizza.nombre}`)
+//   })
+// }
+
+// console.log("C)Los nombres de las pizzas son: ")
+// nombresPizzas();
+
+//Punto D
+
+// const preciosPizza = () => {
+//   arrayPizza.forEach((pizza) => {
+//     console.log(`$${pizza.precio}`)
+//   })
+// }
+
+// console.log("D)Los valores de las pizzas son: ")
+// preciosPizza();
+
+//Punto E
+
+// const preciosPizza1 = () => {
+//   arrayPizza.forEach((pizza) => {
+//     console.log(`Pizza ${pizza.nombre} $${pizza.precio}`)
+//   })
+// }
+
+// console.log("E)Los valores de las pizzas son: ")
+// preciosPizza1();
+
+/***************************************************************/
 
 
