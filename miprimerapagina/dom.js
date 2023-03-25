@@ -22,7 +22,7 @@ parrafo.innerHTML="Agregamos texto desde el JS"
 //console.dir(parrafo)
 
 const divisor = document.getElementById('div')
-divisor.innerHTML="Esto esta en un DIV vacío."
+divisor.innerHTML="Esto está en un DIV vacío."
 //console.dir(divisor)
 
 const email = document.getElementById('email')
@@ -44,3 +44,21 @@ check.defaultChecked=true
 const numero = document.getElementById('number')
 numero.defaultValue=2023
 //console.dir(email)
+
+/*
+*Crear un HTML con un H1 y un p.
+*Tanto el H1 como el p deben tener texto en su interior.
+*Crear un CSS con estilos que le den color.
+
+Con lo visto en clase, lograr que, luego de 3 segundos 
+de cargada la pagina, el h1 cambie de color y cambiar 
+el texto dentro del p.
+*/
+
+const tituloh2 = document.getElementById('tituloCambia')
+const parrafoP = document.getElementById('textoCambia')
+console.dir(tituloh2)
+setTimeout(()=>{
+    tituloh2.style.color='#ffff00'
+    parrafoP.innerHTML="Valores de string nuevos, cargados desde el JS despues de 3 segundos."
+},3000);
