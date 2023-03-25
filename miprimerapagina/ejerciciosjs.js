@@ -690,32 +690,32 @@ minutos”*/
 
 // Por ejemplo: "La pizza X, tiene un valor de $XXXX”.
 
-class pizza{
-  constructor(id,nombre,ingredientes,precio)
-  {
-    this.id=id;
-    this.nombre=nombre;
-    this.ingredientes=ingredientes;
-    this.precio=precio;
-  }
-}
+// class pizza{
+//   constructor(id,nombre,ingredientes,precio)
+//   {
+//     this.id=id;
+//     this.nombre=nombre;
+//     this.ingredientes=ingredientes;
+//     this.precio=precio;
+//   }
+// }
 
-const pepperoni=new pizza(1,'Pepperoni',['Muzzarela','Tomate','Orégano','Pepperoni','Bacon','Olivas Negras'],550);
-const carbonara=new pizza(2,'Carbonara',['Muzzarela','Orégano','Bacon','Cebolla','Champinones','Salsa Carbonara'],580);
-const vegetal=new pizza(3,'Vegetal',['Muzzarela','Tomate','Orégano','Calabacin','Berenjena','Cebolla','Pimiento','Champinones'],310);
-const york=new pizza(4,'York',['Muzzarela','Tomate','Orégano','Jamón York','Champinones','Olivas'],285);
-const hawaiana=new pizza(5,'Hawaiana',['Muzzarela','Tomate','Orégano','Jamón York','Piña'],950);
-const yorkYbacon=new pizza(6,'York & Bacon',['Muzzarela','Tomate','Orégano','Bacon','Jamón York','Champinones','Cebolla','Olivas Negras'],230);
-const bacon=new pizza(7,'Bacon',['Muzzarela','Tomate','Orégano','Bacon','Champinones','Cebolla'],930);
-const barbacoa=new pizza(8,'Barbacoa',['Muzzarela','Tomate','Orégano','Bacon','Ternera','Salsa Barbacoa'],1370);
-const atun=new pizza(9,'Atún',['Muzzarela','Tomate','Orégano','Atún','Pimiento Rojo','Cebolla','Olivas Negras'],2350);
-const quesoCabra=new pizza(10,'Queso Cabra',['Muzzarela','Tomate','Orégano','Edam','Gouda','Azul','Cabra','Cheddar'],680);
-const pollo=new pizza(11,'Pollo',['Muzzarela','Tomate','Orégano','Pollo','Pimiento','Olivas','Cebolla'],1400);
-const mejicana=new pizza(12,'Mejicana',['Muzzarela','Tomate','Orégano','Salsa Picante','Guindilla','Champinones','Ternera'],1600);
+// const pepperoni=new pizza(1,'Pepperoni',['Muzzarela','Tomate','Orégano','Pepperoni','Bacon','Olivas Negras'],550);
+// const carbonara=new pizza(2,'Carbonara',['Muzzarela','Orégano','Bacon','Cebolla','Champinones','Salsa Carbonara'],580);
+// const vegetal=new pizza(3,'Vegetal',['Muzzarela','Tomate','Orégano','Calabacin','Berenjena','Cebolla','Pimiento','Champinones'],310);
+// const york=new pizza(4,'York',['Muzzarela','Tomate','Orégano','Jamón York','Champinones','Olivas'],285);
+// const hawaiana=new pizza(5,'Hawaiana',['Muzzarela','Tomate','Orégano','Jamón York','Piña'],950);
+// const yorkYbacon=new pizza(6,'York & Bacon',['Muzzarela','Tomate','Orégano','Bacon','Jamón York','Champinones','Cebolla','Olivas Negras'],230);
+// const bacon=new pizza(7,'Bacon',['Muzzarela','Tomate','Orégano','Bacon','Champinones','Cebolla'],930);
+// const barbacoa=new pizza(8,'Barbacoa',['Muzzarela','Tomate','Orégano','Bacon','Ternera','Salsa Barbacoa'],1370);
+// const atun=new pizza(9,'Atún',['Muzzarela','Tomate','Orégano','Atún','Pimiento Rojo','Cebolla','Olivas Negras'],2350);
+// const quesoCabra=new pizza(10,'Queso Cabra',['Muzzarela','Tomate','Orégano','Edam','Gouda','Azul','Cabra','Cheddar'],680);
+// const pollo=new pizza(11,'Pollo',['Muzzarela','Tomate','Orégano','Pollo','Pimiento','Olivas','Cebolla'],1400);
+// const mejicana=new pizza(12,'Mejicana',['Muzzarela','Tomate','Orégano','Salsa Picante','Guindilla','Champinones','Ternera'],1600);
 
-const arrayPizza=[];
+// const arrayPizza=[];
 
-arrayPizza.push(pepperoni,carbonara,vegetal,york,hawaiana,yorkYbacon,bacon,barbacoa,atun,quesoCabra,pollo,mejicana);
+// arrayPizza.push(pepperoni,carbonara,vegetal,york,hawaiana,yorkYbacon,bacon,barbacoa,atun,quesoCabra,pollo,mejicana);
 
 //console.log(arrayPizza);
 
