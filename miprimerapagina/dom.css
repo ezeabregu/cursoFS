@@ -32,10 +32,16 @@ a{
 
 .hr{
     border: 2px solid #ffff00;
+    margin: 1rem 1.5rem;
 }
 
-.botonAtras{
+.margen{
+    margin: 1.5rem 0;
+}
+
+.boton{
     margin: 5px 5px;
+    padding: 5px 5px;
     background-color: #ffff00;
     border: 0px;
     border-radius: 5px;
@@ -46,4 +52,27 @@ a{
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     padding: 1rem;
+}
+
+.form__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Error / Success */
+.form__field.error input {
+    border: 1px solid #dc3545;
+}
+  
+.form__field small {
+    display: block;
+    color: #dc3545;
+    max-width: 350px;
+    text-align: center;
+    padding: 7px 0;
+}
+  
+.form__field.success input {
+    border: 1px solid #28a745;
 }

@@ -9,17 +9,17 @@
 </head>
 <body>
     <nav>
-        <button class="botonAtras">
+        <button class="boton">
           <a href="ejerciciojs.html" id="botonBack">Atrás</a>
         </button>
     </nav>
     <h1 id="h1"></h1>
     <p id="p"></p>
     <div id="div"></div>
-    <label for="email">Email:</label>
+    <!-- <label for="email">Email:</label>
     <input type="email" name="" id="email">
     <label for="password">Contraseña:</label>
-    <input type="password" name="" id="password">
+    <input type="password" name="" id="password"> -->
     <label for="text">Texto</label>
     <input type="text" name="" id="text">
     <label for="checkbox">Checkbox:</label>
@@ -33,6 +33,23 @@
     <p id="textoCambia">Con lo visto en clase, lograr que, luego de 3 
     segundos de cargada la pagina, el h1 cambie de color y cambiar el 
     texto dentro del p.</p>
+
+    <hr class="hr">
+    
+    <h2 class="margen">Validación de Formulario</h2>
+    <form action="" class="form__container" id="formulario">
+        <div class="form__field">
+            <input type="email" name="" id="email" placeholder="Email" autocomplete="off">
+            <small></small>
+        </div>
+        <div class="form__field">
+            <input type="password" name="" id="password" placeholder="Password" autocomplete="off">
+            <small></small>
+        </div>
+        <input type="submit" value="Enviar" class="boton">
+    </form>
+
+    <hr class="hr">
 
     <script src="./dom.js"></script>
 </body>
