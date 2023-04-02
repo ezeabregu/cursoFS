@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap");
 
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     padding: 0 50px;
     background-color: #00a4e4;

@@ -30,6 +30,10 @@ a{
     font-size: 1em;
 }
 
+#id, #password{
+    margin: auto;
+}
+
 .hr{
     border: 2px solid #ffff00;
     margin: 1rem 1.5rem;
