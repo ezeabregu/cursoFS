@@ -45,7 +45,8 @@ const quesoCabra=new pizza(10,'Queso Cabra',['Muzzarela','Tomate','Orégano','Ed
 const pollo=new pizza(11,'Pollo',['Muzzarela','Tomate','Orégano','Pollo','Pimiento','Olivas','Cebolla'],1400,'https://images.hola.com/imagenes/cocina/recetas/20200123158802/receta-pizza-pollo-barbacoa/0-772-922/pizza-pollo-adobe-m.jpg');
 const mejicana=new pizza(12,'Mejicana',['Muzzarela','Tomate','Orégano','Salsa Picante','Guindilla','Champinones','Ternera'],1600,'https://recetinas.com/wp-content/uploads/2022/07/pizza-mexicana.jpg');
 
-const arrayPizza=[];
+//agregamos la funcion de local storage, para que se guarden nuevos
+const arrayPizza= [];
 
 arrayPizza.push(pepperoni,carbonara,vegetal,york,hawaiana,yorkYbacon,bacon,barbacoa,atun,quesoCabra,pollo,mejicana);
 
@@ -124,6 +125,7 @@ const $buttonPizza = document.getElementById('button-pizza');
 const $textPizza = document.getElementById('text-pizza');
 const $valuePizza = document.getElementById('value-pizza');
 const $imgPizza = document.getElementById('img-pizza')
+const $ingPizza = document.getElementById('ing-pizza');
 
 const mostrarPizza = () => {
     const valorInput = $inputPizza.value;
@@ -135,6 +137,7 @@ const mostrarPizza = () => {
             // return;
             $textPizza.innerHTML = `<h2>Pizza ${pizza.nombre}</h2>`;
             $valuePizza.innerHTML = `<h4>Precio: $${pizza.precio}</h4>`;
+            $ingPizza.innerHTML =  `<h5>Ingredientes: ${pizza.ingredientes}<h5>`
             $imgPizza.innerHTML = `<img src='${pizza.imagen}' alt='${pizza.nombre}'>`;
             return;
         }
@@ -170,6 +173,11 @@ const mostrarSuccess = (input, message) => {
     error.textContent = message;
 }
 
+// funcion de local storage para guardar el array de pizzas
+const saveLocalStorage = pizzas => {
+  localStorage.setItem('pizza', JSON.stringify(pizzas));
+}
+
 const init = () => {
     $buttonPizza.addEventListener('click', () => {
         if(isValidPizza())
@@ -177,9 +185,26 @@ const init = () => {
             mostrarPizza();
         }
     });
+    saveLocalStorage(arrayPizza);
 }
 
 init();
 
 
+//Ejercicio 3
 
+/*Utilizando el querido array de objetos "Pizzas", realizar el siguiente desafío: 
+- A cada Pizza, agregarle una imagen. 
+- Guardar el array en el local storage. 
+- Crear un archivo HTML que contenga un card en donde se renderice el nombre, imagen,
+ingredientes y precio de una pizza (Estilizarlo con CSS). 
+-Debajo del card tiene que haber un input y un botón. 
+
+Deberemos colocar un numero en el input y, al apretar el botón, deberá renderizar en
+el card la pizza cuyo id coincida con el numero ingresado en el input.
+- Si no coincide con ningún id, renderizar un mensaje de error.
+- En Eduflow, colocar el repositorio de Github, en el cual debe figurar el vercel deployado.
+*/
+
+//Lo realice mas arriba, solo agregue css y los ingredientes a una card. Tambien genere
+//el localStorage
